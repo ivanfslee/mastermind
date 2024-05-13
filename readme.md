@@ -48,20 +48,42 @@ The setup phase prompts the user for certain information such as difficulty leve
 
 **Setup phase**
 
-1. Prompts the user for the difficulty level. The difficulty level is an integer that corresponds with the number of numbers the codebreaker will need to guess.
+1. Prompt the user for the difficulty level. The difficulty level is an integer that corresponds to the number of numbers the Codebreaker will need to guess.
 
-2. Prompts the user for their name.
+2. Prompt the user for their name.
 
-3. Prompts the user for their intended role - codebreaker or code maker
+3. Prompt the user for their intended role - Codebreaker or Codemaker.
 
- <div style="text-align: center;">
+_Diagram 1_ below outlines the initial questions prompted to the user.
+
+<div style="text-align: center;">
     <img
     src="https://github.com/ivanfslee/mastermind/raw/main/assets/game_setup_1.png"
     alt="game setup prompts 1">
     <p>Diagram 1 - game setup prompts 1</p>
 </div>
 
-4. Prompts the user for their opponent type - human or computer
+If the user chooses to be the Codebreaker then:
+
+4. Prompt the user for their opponent type - human or computer.
+
+5. A. If the opponent is a human, then prompt the human for their name.
+   B. If the opponent is the computer, then a code is generated using the random.org API. Then go to step 7.
+
+6. Prompts the human opponent to create a code for the Codebreaker to guess. Then go to step 7.
+
+_Diagram 2_ below, outlines this portion of the game setup.
+
+<div style="text-align: center;">
+    <img
+    src="https://github.com/ivanfslee/mastermind/raw/main/assets/game_setup_2.png"
+    alt="game setup prompts 2">
+    <p>Diagram 2 - game setup prompts 2</p>
+</div>
+
+From step 3, if the user chooses to be the Codemaker then:
+
+4. Prompt the user for their opponent type - human or computer.
 
 5A. If their opponent is human, it will prompt them for their opponent's name.
 

@@ -67,12 +67,13 @@ If the user chooses to be the Codebreaker then:
 
 4. Prompt the user for their opponent type - human or computer.
 
-5. A. If the opponent is a human, then prompt the human for their name.
-   B. If the opponent is the computer, then a code is generated using the random.org API. Then go to step 7.
+5A. If the opponent is a human, then prompt the human for their name.
 
-6. Prompts the human opponent to create a code for the Codebreaker to guess. Then go to step 7.
+5B. If the opponent is the computer, then a code is generated using the random.org API. Then go to step 7.
 
-_Diagram 2_ below, outlines this portion of the game setup.
+6. Prompt the human opponent to create a code for the Codebreaker to guess. Then go to step 7.
+
+_Diagram 2_ below, outlines this portion of the game setup phase.
 
 <div style="text-align: center;">
     <img
@@ -85,19 +86,28 @@ From step 3, if the user chooses to be the Codemaker then:
 
 4. Prompt the user for their opponent type - human or computer.
 
-5A. If their opponent is human, it will prompt them for their opponent's name.
+5A. If the opponent is human, it will prompt them for their opponent's name.
 
-5B. If their opponent is the computer,
+5B. If the opponent is the computer, then prompt Player 1, the human Codemaker to create a code for the computer Codebreaker to guess. Then go to step 7.
 
-6. Prompts the human codemaker to create a code for the codebreaker to guess
+6. Prompt Player 1, the human Codemaker to create a code for the human Codebreaker to guess. Then go to step 7.
+
+_Diagram 3_ below, outlines this portion of the game setup phase.
+
+<div style="text-align: center;">
+    <img
+    src="https://github.com/ivanfslee/mastermind/raw/main/assets/game_setup_3.png"
+    alt="game setup prompts 3">
+    <p>Diagram 3 - game setup prompts 3</p>
+</div>
 
 **Main game loop**
 
-7. Prompts the codebreaker to guess the codemaker's code
+7. Prompt the Codebreaker to guess the Codemaker's code
 
-8. The codebreaker's guess is checked against the codemaker's code and feedback is generated and displayed to the codebreaker.
+8. The Codebreaker's guess is checked against the Codemaker's code and feedback is generated and displayed to the Codebreaker.
 
-9. If the codebreaker's guess matches the codemaker's code, then the game is over. If the guess doesn't match the code and the codebreaker still has guesses left, then go back to step 7. Otherwise, if the codebreaker doesn't have any guesses left, then the game is over.
+9. If the Codebreaker's guess matches the Codemaker's code, then the game is over. If the guess doesn't match the code and the Codebreaker still has guesses left, then go back to step 7. Otherwise, if the Codebreaker doesn't have any guesses left, then the game is over.
 
 _Diagram 4_ below outlines the main game loop.
 

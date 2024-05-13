@@ -70,7 +70,12 @@ The setup phase prompts the user for certain information such as difficulty leve
 
 9. If the codebreaker's guess matches the codemaker's code, then the game is over. If the guess doesn't match the code and the codebreaker still has guesses left, then go back to step 7. Otherwise, if the codebreaker doesn't have any guesses left, then the game is over.
 
-![Main game loop diagram](/assets/main_game_loop.png "Diagram 4 - main game loop")
+<figure>
+  <img
+  src="https://github.com/ivanfslee/mastermind/raw/main/assets/main_game_loop.png"
+  alt="main game loop diagram">
+  <figcaption>Diagram 4 - main game loop</figcaption>
+</figure>
 
 ## Code Structure
 
@@ -86,9 +91,14 @@ The `Player` class is responsible for instantiating player instances and storing
 
 The `Feedback` class is responsible for processing player guesses and determines how many numbers and locations that the guess contains.
 
-The diagram below illustrates how the different classes interact with one another. The `CLI` class can be thought of as the top-most "visual" layer which the user will directly see and interact with. Anything below the CLI class makes up the non-visual layer and underlying logic of the game. The `CLI` class interfaces with the `Game` class. Because the `Game` class contains the core game logic, it can be thought of as the central hub that coordinates in turn with the other `Feedback` and `Player` classes.
+The _Diagram 5_ below illustrates how the different classes interact with one another. The `CLI` class can be thought of as the top-most "visual" layer which the user will directly see and interact with. Anything below the CLI class makes up the non-visual layer and underlying logic of the game. The `CLI` class interfaces with the `Game` class. Because the `Game` class contains the core game logic, it can be thought of as the central hub that coordinates in turn with the other `Feedback` and `Player` classes.
 
-![Class structure diagram](/assets/class_structure.png "Diagram 5 - class structure")
+<figure>
+  <img
+  src="https://github.com/ivanfslee/mastermind/raw/main/assets/class_structure.png"
+  alt="Class structure diagram">
+  <figcaption>Diagram 5 - class structure</figcaption>
+</figure>
 
 The `utils` folder has various modules that contain helper functions used by the different classes. The `validate_input.py` module, contains helper functions that will validate user input. The `get_random_numbers.py` module contains a helper function that makes an HTTP request to the random.org API endpoint in order to generate random numbers.
 

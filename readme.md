@@ -69,7 +69,8 @@ The setup phase prompts the user for certain information such as difficulty leve
 8. The codebreaker's guess is checked against the codemaker's code and feedback is generated and displayed to the codebreaker.
 
 9. If the codebreaker's guess matches the codemaker's code, then the game is over. If the guess doesn't match the code and the codebreaker still has guesses left, then go back to step 7. Otherwise, if the codebreaker doesn't have any guesses left, then the game is over.
-   ![Main game loop diagram](/assets/main_game_loop.png)
+
+![Main game loop diagram](/assets/main_game_loop.png)
 
 ## Code Structure
 

@@ -16,11 +16,29 @@ I use f-strings and certain type hinting syntax that is only available starting 
 
 ## Installation
 
-1. `git clone` the repo or download the code
+To install and run this project, follow these steps:
 
-2. `cd` into the project directory
+1. Clone the repository by running this command in your terminal:
 
-3. Run the `main.py` file by running the command `python main.py` in your command line.
+```bash
+git clone https://github.com/ivanfslee/mastermind.git
+```
+
+Alternatively, you can download the project files directly from github.
+
+2. Navigate to the project directory:
+
+```bash
+cd /path/to/project/directory/mastermind
+```
+
+3. Run the `main.py` file, which will start the game in the terminal.
+
+```bash
+python main.py
+```
+
+The project does not use any additional third-party libraries.
 
 ## Code Structure
 
@@ -38,7 +56,7 @@ The `Feedback` class is responsible for processing player guesses and determines
 
 The diagram below illustrates how the different classes interact with one another. The `CLI` class can be thought of as the top-most "visual" layer which the user will directly see and interact with. Anything below the CLI class makes up the non-visual layer and underlying logic of the game. The `CLI` class interfaces with the `Game` class. Because the `Game` class contains the core game logic, it can be thought of as the central hub that coordinates in turn with the other `Feedback` and `Player` classes.
 
-![Code Structure](/assets/code_structure.png)
+![Class Structure Diagram](/assets/class_structure.png)
 
 The `utils` folder has various modules that contain helper functions used by the different classes. The `validate_input.py` module, contains helper functions that will validate user input. The `get_random_numbers.py` module contains a helper function that makes an HTTP request to the random.org API endpoint in order to generate random numbers.
 

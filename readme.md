@@ -1,10 +1,10 @@
 # Mastermind
 
-[Mastermind](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>) is a two player game where one player is the "codemaker" and the other player is the "codebreaker".
+[Mastermind](<https://en.wikipedia.org/wiki/Mastermind_(board_game)>) is a two player game where one player is the "Codemaker" and the other player is the "Codebreaker".
 
-The codemaker creates a code composed of a sequence of four numbers, each number between zero and seven (inclusive). The codebreaker has 10 attempts to guess the code. After each attempt, feedback is given to the codebreaker showing how many numbers they have correct and how many numbers they have correct in the right location.
+The Codemaker creates a code composed of a sequence of four numbers, each number between zero and seven (inclusive). The Codebreaker has 10 attempts to guess the code. After each attempt, feedback is given to the Codebreaker showing how many numbers they have correct and how many numbers they have correct in the right location.
 
-The game is over when the codebreaker guesses the codemaker's code correctly or when the codebreaker has made 10 failed guesses.
+The game is over when the Codebreaker guesses the Codemaker's code correctly or when the Codebreaker has made 10 failed guesses.
 
 ## Requirements
 
@@ -45,6 +45,8 @@ The project does not use any additional third-party libraries.
 The game has 2 phases. The setup phase and the main game loop.
 
 The setup phase prompts the user for certain information such as difficulty level, player name, opponent type (human or computer), and role type (codemaker or codebreaker).
+
+The main game loop involves comparing the Codebreaker's guess against the Codemaker's code. If the guess matches the code, then the Codebreaker wins! If the guess doesn't match the code, feedback is given to the Codebreaker indicating how many numbers and locations they got correct. If the Codebreaker runs out of guesses without guessing the code correctly, then the game is over.
 
 **Setup phase**
 
@@ -142,6 +144,8 @@ The _Diagram 5_ below illustrates how the different classes interact with one an
 </div>
 
 The `utils` folder has various modules that contain helper functions used by the different classes. The `validate_input.py` module, contains helper functions that will validate user input. The `get_random_numbers.py` module contains a helper function that makes an HTTP request to the random.org API endpoint in order to generate random numbers.
+
+The `assets` folder contains images used in the readme.md file.
 
 ## Extensions
 

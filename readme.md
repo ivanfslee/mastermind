@@ -54,6 +54,13 @@ The setup phase prompts the user for certain information such as difficulty leve
 
 3. Prompts the user for their intended role - codebreaker or code maker
 
+ <div style="text-align: center;">
+    <img
+    src="https://github.com/ivanfslee/mastermind/raw/main/assets/game_setup_1.png"
+    alt="game setup prompts 1">
+    <p>Diagram 1 - game setup prompts 1</p>
+</div>
+
 4. Prompts the user for their opponent type - human or computer
 
 5A. If their opponent is human, it will prompt them for their opponent's name.
@@ -69,6 +76,8 @@ The setup phase prompts the user for certain information such as difficulty leve
 8. The codebreaker's guess is checked against the codemaker's code and feedback is generated and displayed to the codebreaker.
 
 9. If the codebreaker's guess matches the codemaker's code, then the game is over. If the guess doesn't match the code and the codebreaker still has guesses left, then go back to step 7. Otherwise, if the codebreaker doesn't have any guesses left, then the game is over.
+
+_Diagram 4_ below outlines the main game loop.
 
 <div style="text-align: center;">
     <img

@@ -40,6 +40,37 @@ python main.py
 
 The project does not use any additional third-party libraries.
 
+## Game Structure
+
+The game has 2 phases. The setup phase and the main game loop.
+
+The setup phase prompts the user for certain information such as difficulty level, player name, opponent type (human or computer), and role type (codemaker or codebreaker).
+
+**Setup phase**
+
+1. Prompts the user for the difficulty level. The difficulty level is an integer that corresponds with the number of numbers the codebreaker will need to guess.
+
+2. Prompts the user for their name.
+
+3. Prompts the user for their intended role - codebreaker or code maker
+
+4. Prompts the user for their opponent type - human or computer
+
+5A. If their opponent is human, it will prompt them for their opponent's name.
+
+5B. If their opponent is the computer,
+
+6. Prompts the human codemaker to create a code for the codebreaker to guess
+
+**Main game loop**
+
+7. Prompts the codebreaker to guess the codemaker's code
+
+8. The codebreaker's guess is checked against the codemaker's code and feedback is generated and displayed to the codebreaker.
+
+9. If the codebreaker's guess matches the codemaker's code, then the game is over. If the guess doesn't match the code and the codebreaker still has guesses left, then go back to step 7. Otherwise, if the codebreaker doesn't have any guesses left, then the game is over.
+   ![Main game loop diagram](/assets/main_game_loop.png)
+
 ## Code Structure
 
 The entry point of the game starts in `main.py`, which will instantiate a CLI instance object, set up the game, instantiate a Game instance and run the `play` method, which starts up the main game loop.
@@ -56,7 +87,7 @@ The `Feedback` class is responsible for processing player guesses and determines
 
 The diagram below illustrates how the different classes interact with one another. The `CLI` class can be thought of as the top-most "visual" layer which the user will directly see and interact with. Anything below the CLI class makes up the non-visual layer and underlying logic of the game. The `CLI` class interfaces with the `Game` class. Because the `Game` class contains the core game logic, it can be thought of as the central hub that coordinates in turn with the other `Feedback` and `Player` classes.
 
-![Class Structure Diagram](/assets/class_structure.png)
+![Class structure diagram](/assets/class_structure.png)
 
 The `utils` folder has various modules that contain helper functions used by the different classes. The `validate_input.py` module, contains helper functions that will validate user input. The `get_random_numbers.py` module contains a helper function that makes an HTTP request to the random.org API endpoint in order to generate random numbers.
 

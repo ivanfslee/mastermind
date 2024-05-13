@@ -47,6 +47,8 @@ class Game:
             )
 
             self.cli.display_guess(guess)
+            feedback: str = Feedback(guess, code).generate_feedback()
+            self.cli.display_feedback(feedback)
 
             if guess == code:
                 self.cli.display_right_guess()
@@ -54,8 +56,6 @@ class Game:
                 break
             else:
                 self.cli.display_wrong_guess()
-                feedback: str = Feedback(guess, code).generate_feedback()
-                self.cli.display_feedback(feedback)
                 self.guesses_left -= 1
 
         self.cli.display_winner(winner)

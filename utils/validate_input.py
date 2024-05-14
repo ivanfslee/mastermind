@@ -20,7 +20,7 @@ def is_valid_code(code_str: str, count, min_val, max_val) -> bool:
 
 
 def is_valid_1or2(user_input: str) -> bool:
-    if not user_input.isdigit():
+    if user_input.isdigit() is False:
         raise ValueError("Value must be an integer.")
     elif int(user_input) < 1 or int(user_input) > 2:
         raise ValueError("Value must be 1 or 2.")

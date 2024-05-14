@@ -24,7 +24,7 @@ To install and run this project, follow these steps:
 git clone https://github.com/ivanfslee/mastermind.git
 ```
 
-Alternatively, you can download the project files directly from github.
+Alternatively, you can download the project files directly from github by clicking on the green "Code" button at the top of the page and selecting "Download ZIP".
 
 2. Navigate to the project directory:
 
@@ -134,7 +134,7 @@ The `Player` class is responsible for instantiating player instances and storing
 
 The `Feedback` class is responsible for processing player guesses and determines how many numbers and locations that the guess contains.
 
-The _Diagram 5_ below illustrates how the different classes interact with one another. The `CLI` class can be thought of as the top-most "visual" layer which the user will directly see and interact with. Anything below the CLI class makes up the non-visual layer and underlying logic of the game. The `CLI` class interfaces with the `Game` class. Because the `Game` class contains the core game logic, it can be thought of as the central hub that coordinates in turn with the other `Feedback` and `Player` classes.
+_Diagram 5_ below illustrates how the different classes interact with one another. The `CLI` class can be thought of as the top-most "visual" layer which the user will directly see and interact with. Anything below the CLI class makes up the non-visual layer and underlying logic of the game. The `CLI` class interfaces with the `Game` class. Because the `Game` class contains the core game logic, it can be thought of as the central hub that coordinates in turn with the other `Feedback` and `Player` classes.
 
 <div style="text-align: center;">
     <img

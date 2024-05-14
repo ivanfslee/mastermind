@@ -145,7 +145,7 @@ _Diagram 5_ below illustrates how the different classes interact with one anothe
 
 The `utils` folder has various modules that contain helper functions used by the different classes. The `validate_input.py` module, contains helper functions that will validate user input. The `get_random_numbers.py` module contains a helper function that makes an HTTP request to the random.org API endpoint in order to generate random numbers.
 
-The `assets` folder contains images used in the readme.md file.
+The `assets` folder contains images used in the README.md file.
 
 The `tests` folder contains unit tests for several modules.
 

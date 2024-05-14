@@ -56,7 +56,7 @@ class TestCLI(unittest.TestCase):
 
     def test_display_guesses_left(self):
         self.assert_stdout(
-            "You have 5 guesses left!\n", self.cli_1.display_guesses_left, "5"
+            "You have 5 guess(es) left!\n", self.cli_1.display_guesses_left, "5"
         )
 
     def test_display_right_guess(self):

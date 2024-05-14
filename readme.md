@@ -32,10 +32,10 @@ Alternatively, you can download the project files directly from github by clicki
 cd /path/to/project/directory/mastermind
 ```
 
-3. Run the `main.py` file, which will start the game in the terminal.
+3. Run the `game.py` file, which will start the game in the terminal.
 
 ```bash
-python main.py
+python game.py
 ```
 
 The project does not use any additional third-party libraries.
@@ -122,7 +122,7 @@ _Diagram 4_ below outlines the main game loop.
 
 ## Code Structure
 
-The entry point of the game starts in `main.py`, which will instantiate a CLI instance object, set up the game, instantiate a Game instance and run the `play` method, which starts up the main game loop.
+The entry point of the game starts in the static method `main` in the `Game` class in the `game.py` module. This static method will instantiate a CLI instance object, set up the game by prompting the user, instantiate a Game instance and run the `play` method, which starts up the main game loop.
 
 The game code involves 4 different classes - `CLI`, `Player`, `Game`, `Feedback`.
 

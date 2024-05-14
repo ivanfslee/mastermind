@@ -147,7 +147,7 @@ The `utils` folder has various modules that contain helper functions used by the
 
 The `assets` folder contains images used in the readme.md file.
 
-The `tests` folder contains unit tests several modules.
+The `tests` folder contains unit tests for several modules.
 
 ## Extensions
 

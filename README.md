@@ -153,11 +153,11 @@ The `tests` folder contains unit tests for several modules.
 
 From the base requirements in the PDF that was given to me, I extended the game to include other features such as:
 
-- Adding the functionality to allow the player to configure the "difficulty level" of the game. The difficulty level corresponds to the amount of numbers the codebreaker will need to guess. e.g. a difficulty level of 7 means the codebreaker will need to guess a sequence of 7 numbers.
+- Adding the functionality to allow the player to configure the "difficulty level" of the game. The difficulty level corresponds to the amount of numbers the Codebreaker will need to guess. e.g. a difficulty level of 7 means the Codebreaker will need to guess a sequence of 7 numbers.
 
-- Adding the functionality to allow the human player to be the codemaker and the computer to be the codebreaker.
+- Adding the functionality to allow the human player to be the Codemaker and the computer to be the Codebreaker.
 
-- Adding the functionality to allow two human players to play each other on the same machine. One human will be the codemaker and the other will be the codebreaker.
+- Adding the functionality to allow two human players to play each other on the same machine. One human will be the Codemaker and the other will be the Codebreaker.
 
 ## Known Issues
 

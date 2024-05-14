@@ -21,6 +21,14 @@ class Game:
         self.code_min_val: int = 0
         self.code_max_val: int = 7
 
+    @staticmethod
+    def main() -> None:
+        cli = CLI()
+        cli.display_game_intro()
+        game_setup: dict[str, int | dict] = cli.game_setup_prompts()
+        game = Game(cli, game_setup)
+        game.play()
+
     def play(self) -> None:
         self.cli.display_game_start()
 
@@ -60,3 +68,7 @@ class Game:
 
         self.cli.display_winner(winner)
         self.cli.display_game_over()
+
+
+if __name__ == "__main__":
+    Game.main()

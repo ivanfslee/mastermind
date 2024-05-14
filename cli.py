@@ -6,7 +6,7 @@ class CLI:
     def display_border(self) -> None:
         print("=" * 30)
 
-    def display_code_cover(self):
+    def display_code_cover(self) -> None:
         line: str = "=" * 30
         for _ in range(100):
             print(line)
@@ -27,10 +27,10 @@ class CLI:
         print("Game Start!")
 
     def display_guess(self, guess) -> None:
-        print(f"Your guess is: ", guess)
+        print(f"Your guess is: {guess}")
 
     def display_guesses_left(self, guesses_left):
-        print(f"You have {guesses_left} guesses left!")
+        print(f"You have {guesses_left} guess(es) left!")
 
     def display_right_guess(self) -> None:
         print("The CODEBREAKER guessed correctly!")

@@ -147,6 +147,8 @@ The `utils` folder has various modules that contain helper functions used by the
 
 The `assets` folder contains images used in the readme.md file.
 
+The `tests` folder contains unit tests several modules.
+
 ## Extensions
 
 From the base requirements in the PDF that was given to me, I extended the game to include other features such as:

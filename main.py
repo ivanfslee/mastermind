@@ -5,7 +5,7 @@ from game import Game
 def main() -> None:
     cli = CLI()
     cli.display_game_intro()
-    game_setup: dict[str, str | int] = cli.game_setup_prompts()
+    game_setup: dict[str, int | dict] = cli.game_setup_prompts()
     game = Game(cli, game_setup)
     game.play()
 
